@@ -1,0 +1,30 @@
+section.home {
+  @include media($medium-screen) {
+    @include outer-container(80%);
+  }
+
+  .banner {
+    @include media($large-screen) {
+      margin: auto;
+      width: 50%;
+    }
+
+    header {
+      margin-top: 40px;
+      text-align: center;
+      h1 {
+        margin-bottom: 8px;
+      }
+      p.subtitle {
+        margin-top: 0;
+      }
+    }
+
+    button {
+      display: block;
+      margin: auto;
+      width: 32%;
+      background-color: #F4C671;
+    }
+  }
+}
