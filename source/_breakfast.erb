@@ -1,0 +1,16 @@
+<article>
+  <h1><%= breakfast["name"] %></h1>
+  <p><%= breakfast["street"] %><br>
+  <%= breakfast["city"] %><br>
+  <% if breakfast["tel"] %>
+    <a href="tel:32<%= breakfast["tel"] %>">Tel.: +32 (0)<%= breakfast["tel"] %><a><br>
+  <% end %>
+  <% if breakfast["gsm"].present? %>
+    <a href="tel:32<%= breakfast["gsm"] %>">GSM: +32 (0)<%= breakfast["gsm"] %><br>
+  <% end %>
+  <i class="fa fa-envelope"></i><a href="mailto:<%= breakfast["email"] %>"><%= breakfast["email"] %></a><br>
+  <i class="fa fa-link"></i><a href="http://<%= breakfast["web"] %>"><%= breakfast["web"] %></a><br>
+  Price for one person:  <%= breakfast["price"] %><br>
+  Distance to conference location: <%= breakfast["distance"] %>
+  </p>
+</article>

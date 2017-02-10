@@ -1,0 +1,10 @@
+<article>
+  <h1><%= hotel["name"] %></h1>
+  </p><%= hotel["street"] %><br>
+  <%= hotel["city"] %><br>
+  tel. <a href="tel:32<%= hotel["tel"] %>"><%= hotel["tel"] %><br>
+  <i class="fa fa-envelope"></i><a href="mailto:<%= hotel["email"] %>"><%= hotel["email"] %></a><br>
+  <i class="fa fa-link"></i><a href="http://<%= hotel["website"] %>"><%= hotel["website"] %></a><br>
+  Average price for standard room: <%= hotel["price"] %><br>
+  Distance to conference location: <%= hotel["distance"] %></p>
+</article>

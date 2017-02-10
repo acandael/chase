@@ -1,0 +1,28 @@
+---
+title: accomodations &amp; restaurants
+---
+
+<section class="accomodation">
+  <header>
+  <h1>Accomodations & Restaurants</h1>
+  </header>
+  <div class="content">
+    <h2>Hotels in Ghent</h2>
+    <% if data.hotels %>
+        <% data.hotels.each do |hotel| %>
+          <%= partial "hotel", locals: { hotel: hotel } %>
+        <% end %>
+    <% else %>
+      <p>No hotels</p>
+    <% end %>
+    <h2>Bed & Breakfasts in Ghent</h2>
+    <p>If you can’t find a B&amp;B to your liking, have a look at Bed &amp; Breakfast Gent. This website lists all Bed &amp; Breakfasts in Ghent.</p>
+    <% if data.breakfasts %>
+      <% data.breakfasts.each do |breakfast| %>
+        <%= partial "breakfast", locals: { breakfast: breakfast } %>
+      <% end %>
+    <% else %>
+      <p>No hotels</p>
+    <% end %>
+  </div>
+</section>
