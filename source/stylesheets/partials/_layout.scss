@@ -3,7 +3,11 @@ html {
 }
 
 section {
-  @include outer-container(80%);
+  @include outer-container(90%);
+  margin-top: 2.25em;
+  @include media($medium-screen) {
+    @include outer-container(80%);
+  }
   header, .practical {
     @include media($medium-screen) {
       margin: auto;
