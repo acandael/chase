@@ -1,4 +1,6 @@
 section.home {
+  @include outer-container(90%);
+  margin-top: 2.25em;
   @include media($medium-screen) {
     @include outer-container(80%);
   }

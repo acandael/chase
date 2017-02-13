@@ -29,8 +29,11 @@ html, body {
 
   display: block;
   margin: auto;
-  width: 16%;
-  margin-top: 56px;
+  width: 50%;
+  @include media($medium-screen) {
+    width: 16%;
+    margin-top: 56px;
+  }
 
   ul {
     margin: 0;
