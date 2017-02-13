@@ -29,7 +29,10 @@ section.home {
     button {
       display: block;
       margin: auto;
-      width: 58%;
+      width: 68%;
+      @include media($medium-screen) {
+        width: 32%;
+      }
     }
   }
 }
