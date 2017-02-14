@@ -42,7 +42,11 @@ section.home {
 section.introduction {
   padding-top: 5.063em;
   article.box {
-    @include span-columns(4);
+    margin-bottom: 3.375em;
+    @include media($medium-screen) {
+      @include span-columns(4);
+      padding: 1em;
+    }
     h2 {
       text-align: center;
     }
