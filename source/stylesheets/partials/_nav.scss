@@ -19,6 +19,7 @@
     float: right;
     margin: 0;
     padding-top: 0.5em;
+    font-weight: 700;
 
     @include media ($medium-screen) {
       display: none;
