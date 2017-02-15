@@ -42,3 +42,6 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+set :url_root, 'http://www.chase.ugent.be'
+activate :search_engine_sitemap
