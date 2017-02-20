@@ -35,7 +35,7 @@
   .logo {
     float: left;
 
-    @include media ($medium-screen) {
+    @include media ($large-screen) {
       float: none;
       text-align: center;
       display: block;
