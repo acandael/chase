@@ -12,8 +12,11 @@ section {
     @include media($medium-screen) {
       margin: auto;
       margin-bottom: 56px;
-      width: 50%;
+      width: 70%;
       float: none;
+    }
+    @include media($large-screen) {
+      width: 50%;
     }
   }
 }
