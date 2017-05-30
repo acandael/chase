@@ -1,0 +1,18 @@
+table.programme {
+  width: 60%;
+  margin: 2em auto;
+  th {
+    text-align: center;
+    background-color: $action-color;
+    color: #fff;
+  }
+
+  p.session {
+    font-style: italic;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-bottom: 1em;
+  }
+}
