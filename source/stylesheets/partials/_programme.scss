@@ -1,5 +1,7 @@
 table.programme {
+  @include media($large-screen) {
   width: 60%;
+  }
   margin: 2em auto;
   th {
     text-align: center;
